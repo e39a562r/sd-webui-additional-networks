@@ -160,6 +160,27 @@ Composable LoRA はサブプロンプトごとに LoRA の適用有無を切り�
 
 ## Change History
 
+- 6 Apr. 2023, 2023/4/6
+  - Fix an issue where the `Hires. fix` does not work with mask.
+  - 領域別LoRAでHires. fixが動作しない不具合を修正しました。
+- 30 Mar. 2023, 2023/3/30
+  - Fix an issue where the `Save Metadata` button in the metadata editor does not work even if `Editing Enabled` is checked.
+  - メタデータエディタで `Save Metadata` ボタンが `Editing Enabled` をチェックしても有効にならない不具合を修正しました。
+- 28 Mar. 2023, 2023/3/28
+  - Fix style for Gradio 3.22. Thanks to space-nuko!
+  - Please update Web UI to the latest version.
+  - Gradio 3.22 のスタイルに対応しました。space-nuko氏に感謝します。
+  - Web UIを最新版に更新願います。
+- 11 Mar. 2023, 2023/3/11
+  - Leading spaces in each path in `Extra paths to scan for LoRA models` settings are ignored. Thanks to tsukimiya!
+  - 設定の `Extra paths to scan for LoRA models` の各ディレクトリ名の先頭スペースを無視するよう変更しました。tsukimiya氏に感謝します。
+- 9 Mar. 2023, 2023/3/9: Release v0.5.1
+  - Fix the model saved with `bf16` causes an error. https://github.com/kohya-ss/sd-webui-additional-networks/issues/127
+  - Fix some Conv2d-3x3 LoRA modules are not effective. https://github.com/kohya-ss/sd-scripts/issues/275
+  - Fix LoRA modules with higher dim (rank) > 320 causes an error.
+  - `bf16` で学習されたモデルが読み込めない不具合を修正しました。 https://github.com/kohya-ss/sd-webui-additional-networks/issues/127
+  - いくつかの Conv2d-3x3 LoRA モジュールが有効にならない不具合を修正しました。 https://github.com/kohya-ss/sd-scripts/issues/275
+  - dim (rank) が 320 を超えるLoRAモデルが読み込めない不具合を修正しました。
 - 8 Mar. 2023, 2023/3/8: Release v0.5.0
   - Support current version of [LoCon](https://github.com/KohakuBlueleaf/LoCon). __Thank you very much KohakuBlueleaf for your help!__
     - LoCon will be enhanced in the future. Compatibility for future versions is not guaranteed.
