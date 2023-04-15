@@ -160,6 +160,17 @@ Composable LoRA はサブプロンプトごとに LoRA の適用有無を切り�
 
 ## Change History
 
+- 6 Apr. 2023, 2023/4/6
+  - Fix an issue where the `Hires. fix` does not work with mask.
+  - 領域別LoRAでHires. fixが動作しない不具合を修正しました。
+- 30 Mar. 2023, 2023/3/30
+  - Fix an issue where the `Save Metadata` button in the metadata editor does not work even if `Editing Enabled` is checked.
+  - メタデータエディタで `Save Metadata` ボタンが `Editing Enabled` をチェックしても有効にならない不具合を修正しました。
+- 28 Mar. 2023, 2023/3/28
+  - Fix style for Gradio 3.22. Thanks to space-nuko!
+  - Please update Web UI to the latest version.
+  - Gradio 3.22 のスタイルに対応しました。space-nuko氏に感謝します。
+  - Web UIを最新版に更新願います。
 - 11 Mar. 2023, 2023/3/11
   - Leading spaces in each path in `Extra paths to scan for LoRA models` settings are ignored. Thanks to tsukimiya!
   - 設定の `Extra paths to scan for LoRA models` の各ディレクトリ名の先頭スペースを無視するよう変更しました。tsukimiya氏に感謝します。
